@@ -1,7 +1,7 @@
 p:empty::before {
   margin-left: 20px;
   color: grey;
-  content: "ข้อความขึ้นตรงนี้";
+  content: "Text here.";
 }
 .outPut{
   width: 60%;
