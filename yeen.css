@@ -6,13 +6,13 @@ p:empty::before {
 .outPut{
   width: 60%;
   height: 100px;
-  border: 2px solid  black;
-  margin: 40px 100px;
+  border: 50px solid  black;
+  margin: 50px 10%;
   overflow: auto;
   float: left;
 }
 .keyboard {
-    margin: 80px 100px;
+    margin: 10px 10%;
     position: center;
     width: 850px;
     border: 5px solid blue white;

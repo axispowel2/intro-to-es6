@@ -3,10 +3,12 @@ var shi = false;
 
 function key(e) {
     var txt = e;
-        if (cab == true) {
+    if (cab == true) {
             if (shi == true) {
             	document.getElementById("outPut").innerHTML = document.getElementById("outPut").innerHTML + txt;
-            	shi == false;
+            	document.getElementById("ship").style.backgroundColor = "black";
+            	document.getElementById("shipp").style.backgroundColor = "black";
+            	shi = false;
             }
             else{
             	document.getElementById("outPut").innerHTML = document.getElementById("outPut").innerHTML + txt.toUpperCase();
@@ -15,6 +17,7 @@ function key(e) {
         else if (cab == false && shi == true) {
         	document.getElementById("outPut").innerHTML = document.getElementById("outPut").innerHTML + txt.toUpperCase();
             document.getElementById("ship").style.backgroundColor ="black";
+            document.getElementById("shipp").style.backgroundColor = "black";
             shi = false;
         } 
         else {
@@ -40,23 +43,23 @@ function tab() {
 }
 
 function cabb() {
-	if (cab == false) {
+    if (cab == false) {
         cab = true;
-        document.getElementById("cabb").style.backgroundColor ="#adad85";
-    }	
-    else{
-    	cab = false;
-    	document.getElementById("cabb").style.backgroundColor ="black";
+        document.getElementById("cabb").style.backgroundColor = "#adad85";
+    } else {
+        cab = false;
+        document.getElementById("cabb").style.backgroundColor = "black";
     }
-    
 }
-function ship(){
-	if (shi == false) {
+
+function ship() {
+    if (shi == false) {
         shi = true;
-        document.getElementById("ship").style.backgroundColor ="#8a8a5c";
-    }	
-    else{
-    	shi = false;
-    	document.getElementById("ship").style.backgroundColor ="black";
+        document.getElementById("ship").style.backgroundColor = "#8a8a5c";
+        document.getElementById("shipp").style.backgroundColor = "#8a8a5c";
+    } else {
+        shi = false;
+        document.getElementById("ship").style.backgroundColor = "black";
+        document.getElementById("shipp").style.backgroundColor = "black";
     }
 }
